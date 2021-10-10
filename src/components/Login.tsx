@@ -4,7 +4,9 @@ const Login = (props) =>
     <Container>
         <Content>
             <CTA>
-                <CTALogoOne src="/images/cta-logo-one.png"/>
+                <CTALogoOne src="/images/cta-logo-one.svg"/>
+                <SignUp> GET ALL THERE </SignUp>
+                <CTALogoTwo src="/images/cta-logo-two.png"/>
             </CTA> 
         </Content>
     </Container>
@@ -26,12 +28,42 @@ const Content = styled.div`
 `;
 
 const CTA = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    align-items: center;
 `;
 
 const CTALogoOne = styled.img`
     max-width: 600px;
-    padding: 12px;
-    width: 100vw;
+    width: 100%;
+    margin-bottom: 12px;
+`;
+
+const CTALogoTwo = styled.img`
+    max-width: 600px;
+    width: 100%;
+`;
+
+const SignUp = styled.a`
+    display: flex;
+    max-width: 600px;
+    font-weight: bold;
+    color: #f9f9f9;
+    margin-bottom: 12px;
+    background-color: #0063e5;
+    width: 100%;
+    justify-content: center;
+    padding: 16.5px 0;
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: #0483ee;
+    }
 `;
 
 export default Login;

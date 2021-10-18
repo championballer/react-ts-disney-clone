@@ -73,6 +73,10 @@ fixed : renders relative to the root HTML element. stay in the same position whe
 
 sticky : combination of relative and fixed positions into one. It is rendered with relative position when it is in view, but when it is about to go out of view, it changes to fixed, to get rendered as per the coordinates defined in the styling. 
 
+justify-content : space-between allows for two elements to be 
+
+align-items : to vertically align elements in a component
+
 Things to explore
 Utility of package.json and tsconfig.json
 
